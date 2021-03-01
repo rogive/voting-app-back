@@ -25,10 +25,6 @@ export class Candidate extends BaseEntity {
   slogan: string;
 
   @Field(() => Number)
-  @Column({ default: 0 })
+  @Column()
   votes: number;
-
-  @Field(() => Boolean)
-  @Column({ default: false })
-  isUpdated: true;
 }
